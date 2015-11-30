@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+<!--meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+<link rel="stylesheet" type="text/css" href="css/parkcss.css" />
+<title>Jamaican Grill</title>
+<script type="text/javascript">            
+			function handleOpenURL(url) {
+				setTimeout(function() {
+					// This function is triggered by the LaunchMyApp Plugin
+					//alert("received url: " + url);
+				}, 3000);
+			}
+        </script>
+</head>
+<body>
+<header>
+  <h2 class="text-center contacts"><span><img src="img/contact.png">&nbsp;Contact Info </span></h2>
+  <div id="contactinfo">
+    <div class="toggleblock">
+      <h3 class="text-center">Call Us !</h3>
+      <hr />
+      <br/>
+      <div class="phoneslide"> <span>Hagatna:</span> <a class="green">472-2000</a><br>
+        <br>
+        <a  class="green">472-2600</a><br>
+        <br>
+        <span>Tumon:</span> <a class="yellow">647-3000</a><br>
+        <br>
+        <a  class="yellow">647-4000</a><br>
+        <br>
+        <span>Dededo:</span> <a  class="red">633-3000</a><br>
+        <br>
+        <a class="red">633-4000</a><br>
+        <br>
+        <span>Corporate Office:</span> <a  class="purple">647-1934</a><br>
+        <br>
+        <a class="purple">647-1935</a><br>
+        <br>
+        &nbsp;</div>
+    </div>
+  </div>
+</header>
+<div class="topbar"><img src="img/topbar.png" /></div>
+<div class="banner"> <img class="bannerimg" src="img/banner.jpg" />
+  <div class="logo"> <img src="img/logo.png" />
+    <h3>YA MON, SERIOUS FOOD</h3>
+  </div>
+  <div class="topbar"><img src="img/topbar.png" /></div>
+</div>
+<div class="infocontent text-center">
+  <p>You will need Wifi/Network Connection<br/>
+    to really enjoy this serious app.<br/>
+    Connect to a network and please try again. </p>
+  <div class="appdiv"> <a class="againbtn" href="index.html">TRY OPENING APP AGAIN</a> </div>
+</div>
+<br/>
+<div class="jgcharacter text-center"> <img src="img/jgcartoons.png" /> </div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/1.7.1jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">           
+		jQuery('.contacts').click(function(){
+		jQuery('#contactinfo').slideToggle();
+	});	
+        </script>
+</body>
+</html>
